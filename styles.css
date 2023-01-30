@@ -1,0 +1,300 @@
+body {
+    background: gray;
+    color:rgb(7, 6, 6);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*  MAIN HEADER */
+
+header {
+    background-color: rgb(250, 248, 248);
+    background-image: url(images/sleepingDog.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 380px;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+}
+header a {
+    color: rgb(255, 253, 253);
+    font-family: Copperplate, fantasy;
+    -webkit-text-stroke: 1px rgb(8, 7, 7);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+header .mobile {
+    display: none;
+}
+header .logo a {
+    background-image: url("images/logo.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    height: 141px;
+    display: inline-block;
+    position: relative;
+    text-indent: -99999999px;
+    top: -50px;
+    width: 300px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* PAGE HEADERS */
+
+.menuHeader {
+    background-image: url(./images/sleepingDogMenu.jpg)
+}
+.locationsHeader {
+    background-image: url(./images/sleepingDogLocations.jpg);
+
+}
+.aboutHeader {
+    background-image: url(./images/puppyAbout.jpg);
+
+}
+.edmontonHeader {
+    background-image: url(./images/edmonton2.jpg);
+
+}
+.redDeerHeader {
+    background-image: url(./images/redDeer3.jpg);
+
+}
+.calgaryHeader {
+    background-color: rgb(250, 248, 248);
+    background-image: url(./images/calgary2.jpg);
+    height: 320px;
+}
+
+
+/* RESPONSIVE RULES */
+
+@media screen and (max-width: 715px) {
+    header {
+        height: 250px;
+        background-position: 0 -5px;
+    }
+    header .logo a {
+        top: -40px;
+
+    }
+    header .mobile {
+        display: inline-block;
+
+    }
+    header .desktop {
+        display: none;
+    }
+    nav li {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        height: 200px;
+        background-position: 0px 0px;
+    }
+}
+
+/* FEATURES */
+
+.features {
+    background:rgb(255, 254, 254);
+    color: rgb(10, 10, 10);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.features figure {
+    font-weight: bold;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+}
+.features figure a {
+    color: black;
+    text-decoration: none;
+}
+.features figure img {
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: rgb(12, 11, 11) 0 0 15px;
+    width: 200px;
+}
+
+/* PAGE BODIES */
+
+.menuBody {
+    background:rgb(255, 254, 254);
+    color: rgb(10, 10, 10);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.menuBody figure {
+    font-weight: bold;
+    margin: auto;
+    padding: 5px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 700px;
+}
+.menuBody figure img {
+    border: 1px solid white;
+    box-shadow: rgb(12, 11, 11) 0 0 15px;
+    width: 700px;
+}
+
+.locationsBody {
+    background:rgb(255, 254, 254);
+    color: rgb(10, 10, 10);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.locationsBody figure {
+    font-weight: bold;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+}
+.locationsBody figure a {
+    text-decoration: none;
+}
+.locationsBody figure img {
+    border: 1px solid white;
+    border-radius: 30px;
+    box-shadow: rgb(12, 11, 11) 0 0 15px;
+    width: 200px;
+}
+
+.edmontonBody {
+    background:rgb(255, 254, 254);
+    color: rgb(10, 10, 10);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.edmontonBody figure {
+    font-weight: bold;
+    margin: auto;
+    padding: 5px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 700px;
+}
+.edmontonBody figure img {
+    border: 1px solid white;
+    box-shadow: rgb(12, 11, 11) 0 0 15px;
+    width: 700px;
+}
+
+.redDeerBody {
+    background:rgb(255, 254, 254);
+    color: rgb(10, 10, 10);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.redDeerBody figure {
+    font-weight: bold;
+    margin: auto;
+    padding: 5px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 700px;
+}
+.redDeerBody figure img {
+    border: 1px solid white;
+    box-shadow: rgb(12, 11, 11) 0 0 15px;
+    width: 700px;
+}
+
+.calgaryBody {
+    background:rgb(255, 254, 254);
+    color: rgb(10, 10, 10);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.calgaryBody figure {
+    font-weight: bold;
+    margin: auto;
+    padding: 5px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 700px;
+}
+.calgaryBody figure img {
+    border: 1px solid white;
+    box-shadow: rgb(12, 11, 11) 0 0 15px;
+    width: 700px;
+}
+
+.aboutBody {
+    background:rgb(255, 254, 254);
+    color: rgb(10, 10, 10);
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.registerBody {
+    background:rgb(255, 254, 254);
+    color: rgb(10, 10, 10);
+    padding: 20px;
+    /* display: flex; */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* RESPONSIVE RULES */
+
+@media screen and (max-width: 715px) {
+    .features {
+        display: block;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    background: black;
+    color: gray;
+    font-size: 15px;
+    padding: 20px 20px;
+    text-align: center;
+}
+.footer a:link {
+    color: gray;
+    text-decoration: none;
+}
+.footer a:visited {
+    color: gray;
+}

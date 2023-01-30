@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Page!</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: black;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+            background: grey;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+        li:hover {
+            background-color: rgb(5, 4, 4);
+        }
+        li:first-child {
+            margin-left: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:active {
+            color: rgb(226, 223, 7);
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .feature-box {
+            display: flex;
+        }
+        .feature-box div {
+            width: 100%;
+            margin: 1px;
+        }
+        .feature-box.sales div {
+            background: gray;
+        }
+        .feature-box.closeouts div {
+            background: rgb(235, 19, 19);
+        }
+        #frank {
+            font-size: 30px;
+        }
+        li:last-child {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+        <li><a href="pages/locations.html">Locations</a></li>
+        <li><a href="pages/directions.html">Directions</a></li>
+    </ul>
+    <section id="frank" class="feature-box sales">
+        <div>Section a</div>
+        <div>Section b</div>
+        <div>Section c</div>
+    </section>
+    <section class="feature-box closeouts">
+        <div>Section d</div>
+        <div>Section e</div>
+    </section>
+</body>
+</html>

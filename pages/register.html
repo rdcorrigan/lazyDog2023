@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register | Lazy Dog</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header class="registerHeader">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="mobile"><a href="locations.html">Locations</a></li>
+                <li class="mobile"><a href="about.html">About</a></li>
+                <li class="logo"><a href="../index.html">Lazy Dog Logo</a></li>
+                <li class="desktop"><a href="locations.html">Locations</a></li>
+                <li class="desktop"><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="registerBody">
+        <p>SIGN UP FOR OUR MONTHLY NEWSLETTER. NEW SPECIALS AND CONTESTS EVERY MONTH!</p>
+        <form method="GET" >
+            First Name: <input type="text" name="firstname" required><br>
+            Last Name: <input type="text" name="lastname" required><br>
+            Email: <input type="email" name="email" required><br>
+            Birthday: <input type="date" name="birthday"><br>
+            Gender: <br>
+            <input type="radio" name="gender" value="Male">Male<br>
+            <input type="radio" name="gender" value="Female">Female<br>
+            <input type="radio" name="gender" value="Prefer Not to Answer">Prefer Not to Answer<br>
+            <table cellpadding="3" cellspacing="0">
+                <tr>
+                    <td>
+                        Password:
+                    </td>
+                    <td>
+                        <input type="password" id="txtPassword" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Confirm Password:
+                    </td>
+                    <td>
+                        <input type="password" id="txtConfirmPassword" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <input type="button" id="btnSubmit" value="Submit" onclick="return Validate()" />
+                    </td>
+                </tr>
+            </table>
+            <script type="text/javascript" aria-required="true">
+                function Validate() {
+                    var password = document.getElementById("txtPassword").value;
+                    var confirmPassword = document.getElementById("txtConfirmPassword").value;
+                    if (password != confirmPassword) {
+                        alert("Passwords do not match.");
+                        return false;
+                    }
+                    if (password == '' || confirmPassword == '') {
+                        alert("Password required.");
+                        return false;
+                    }
+                    return true;
+                }
+            </script>
+            <input type="submit" value="Register">
+            <input type="reset">
+        </form>
+
+        <figure>
+            <img src="../images/" alt="">
+        </figure>
+       
+    </section>
+
+    <footer class="footer">
+        contact@lazydog.ca &bull; TM & &copy; 2023 Lazy Dog | <a href="register.html">Subscribe</a>
+    </footer>
+    
+</body>
+</html>
